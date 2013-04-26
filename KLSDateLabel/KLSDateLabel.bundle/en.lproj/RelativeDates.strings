@@ -1,0 +1,46 @@
+//
+//  Copyright (c) 2013 Kevin L. Stock (http://www.tantalic.com)
+//
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE.
+//
+
+/* String for current time (relative date label) */
+"now" = "now";
+
+/* Pluralized string for number of second (relative date labels) */
+"%d second (plural rule: one)" = "%d second";
+"%d second (plural rule: other)" = "%d seconds";
+
+/* Pluralized strings for number of minutes (relative date labels) */
+"%d minute (plural rule: one)" = "%d minute";
+"%d minute (plural rule: other)" = "%d minutes";
+
+/* Pluralized strings for number of hours (relative date labels) */
+"%d hour (plural rule: one)" = "%d hour";
+"%d hour (plural rule: other)" = "%d hours";
+
+/* Pluralized strings for number of days (relative date labels) */
+"%d day (plural rule: one)" = "%d day";
+"%d day (plural rule: other)" = "%d days";
+
+/* Format string for past dates */
+"ago" = "%@ ago";
+
+/* Format string for future dates */
+"from now" = "%@ from now";
