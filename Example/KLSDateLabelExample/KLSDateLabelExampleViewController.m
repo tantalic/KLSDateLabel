@@ -41,10 +41,14 @@
     self.exampleTwo.date = [NSDate dateWithTimeIntervalSinceNow:30];
     self.exampleThree.date = [NSDate dateWithTimeIntervalSinceNow:-30];
     
-    // 5 minutes ago, 5 minutes from now
+    // 5 minutes ago
     self.exampleFour.date = [NSDate dateWithTimeIntervalSinceNow:(5*60)];
-    self.exampleFive.date = [NSDate dateWithTimeIntervalSinceNow:(-5*60)];
     
+    // Two days ago
+    self.exampleFive.date = [NSDate dateWithTimeIntervalSinceNow:(-2*60*60*24)];
+    
+    // November 16. 2012, 10:38 PM PST
+    self.exampleSix.date = [NSDate dateWithTimeIntervalSince1970:1353134280];
     
 }
 
