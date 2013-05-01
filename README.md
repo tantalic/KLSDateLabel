@@ -16,6 +16,31 @@ dateLabel.date = [NSDate date];
 ### Documentation
 To install the documentation into the Xcode organizer install [appledoc](https://github.com/tomaz/appledoc) and run the command `appledoc -p KLSDateLabel -c "Keivn Stock" --company-id com.tantalic KLSDateLabel/*.h`
 
+## Installation
+The recommended way to use KLSDateLabel is with the [CocoaPods](http://www.cocoapods.org) dependency manager.  
+
+1. [Install CocoaPods](http://docs.cocoapods.org/guides/installing_cocoapods.html) (if not already installed)
+
+2. Create a Podfile for your project in the same directory as your Xcode project file:
+
+	``` bash
+	$ touch Podfile
+	```
+
+3. Add the following line to your Podfile
+
+	``` ruby
+	pod 'KLSDateLabel', '~> 0.0'
+	```
+
+4. Update (or create) :
+
+	``` bash
+	$ pod install
+	```
+
+5. Always open the Xcode workspace (.xcworkspace) instead of the project file to work on your project
+
 ## Requirements
 The recommended way to use KLSDateLabel is with the [CocoaPods](http://www.cocoapods.org) dependency manager. If you choose to use the source files directly you are responsible for meeting the following requirements. 
 
