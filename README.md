@@ -1,6 +1,5 @@
 # KLSDateLabel
-A UILabel subclass for displaying dates.  
-
+A UILabel subclass for displaying dates. By default KLSDateLabel will use a relative description ("9 minutes ago", "16 hours from now", etc) for dates within 7 days of the current date (this behavior can be disabled). For dates outside of this range a date formatter is used to transform the date into text.  The default date formatter uses a long date style and does not include the time. 
 
 
 ## Usage
@@ -12,6 +11,9 @@ Instead of providing a NSString for the label text (as you would do with UILabel
 KLSDateLabel *dateLabel = [[KLSDateLabel alloc] initWithFrame:CGRectMake(20, 20, 280, 40)];
 dateLabel.date = [NSDate date];
 ```
+
+### Advanced Usage
+The behavior of KLSDateLabel's can be customized through the properties available.  Please [see the documentation](http://cocoadocs.org/docsets/KLSDateLabel) for more information.
 
 ### Documentation
 When you install KLSDateLabel through CocoaPods, documentation will be installed into Xcode’s documentation viewer. The documentation is also available online online at [CocoaDocs](http://cocoadocs.org/docsets/KLSDateLabel). If you are not using CocoaPods you can manually install the documentation by installing [appledoc](https://github.com/tomaz/appledoc) and running the following command:
