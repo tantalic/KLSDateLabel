@@ -14,7 +14,13 @@ dateLabel.date = [NSDate date];
 ```
 
 ### Documentation
-To install the documentation into the Xcode organizer install [appledoc](https://github.com/tomaz/appledoc) and run the command `appledoc -p KLSDateLabel -c "Keivn Stock" --company-id com.tantalic KLSDateLabel/*.h`
+When you install KLSDateLabel through CocoaPods, documentation will be installed into Xcode’s documentation viewer. The documentation is also available online online at [CocoaDocs](http://cocoadocs.org/docsets/KLSDateLabel). If you are not using CocoaPods you can manually install the documentation by installing [appledoc](https://github.com/tomaz/appledoc) and running the following command:
+
+``` bash
+$ appledoc -p KLSDateLabel -c "Keivn Stock" --company-id com.tantalic KLSDateLabel/*.h
+```
+
+
 
 ## Installation
 The recommended way to use KLSDateLabel is with the [CocoaPods](http://www.cocoapods.org) dependency manager.  
@@ -42,7 +48,7 @@ The recommended way to use KLSDateLabel is with the [CocoaPods](http://www.cocoa
 5. Always open the Xcode workspace (.xcworkspace) instead of the project file to work on your project
 
 ## Requirements
-The recommended way to use KLSDateLabel is with the [CocoaPods](http://www.cocoapods.org) dependency manager. If you choose to use the source files directly you are responsible for meeting the following requirements. 
+If you choose to use the source files directly you are responsible for meeting the following requirements. 
 
 ### iOS 5.0 or Greater
 KLSDateLabel has only been tested on iOS 5.0 and greater. It may work with previous releases but is not recomended. 
@@ -52,9 +58,6 @@ KLSDateLabel requires [ARC](https://developer.apple.com/library/ios/#releasenote
 
 ### TTTLocalizedPluralString
 KLSDateLabel uses [TTTLocalizedPluralString](https://github.com/mattt/TTTLocalizedPluralString/) for handling localization strings. The TTTLocalizedPluralString macros work simular to the NSLocalizedString macros but add a count argument.
-
-### appledoc
-[appledoc](https://github.com/tomaz/appledoc) is required if you would like to install the KLSDateLabel documentation into the Xcode organizer.
 
 
 
