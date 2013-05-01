@@ -72,8 +72,20 @@
     self = [super initWithCoder:decoder];
     self = [self sharedinitialization];
     
-    id date = [decoder decodeObjectOfClass:[NSDate class] forKey:@"KLSDate"];
-    if (date) {
+    if (self) {
+        id date = nil;
+        
+        // Use NSSecureCoding protocol if available
+        if ([decoder respondsToSelector:@selector(decodeObjectOfClass:forKey:)]) {
+            date = [decoder decodeObjectOfClass:[NSDate class] forKey:@"KLSDate"];
+        }
+        
+        // Fallback to standard NSCoding protocol if NSSecureCoding protocol is NOT available
+        else {
+            id decodedObject = [decoder decodeObjectForKey:@"KLSDate"];
+            date = [decodedObject isKindOfClass:[NSDate class]] ? decodedObject : nil;
+        }
+        
         self.date = date;
     }
     
